@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
 body {
   font-size: 62.5%;
   font-family: 'Josefin Sans', sans-serif;
@@ -17,6 +25,31 @@ body {
   max-width: 1440px;
 }
 
+.logo {
+  width: 100%;
+  height: 11%;
+}
+
+.logo__img {
+  padding: 1.9rem;
+  height: 5.2rem;
+}
+
+.header__bg {
+  position: absolute;
+  left: 0;
+  width: 58%;
+  height: 100vh;
+  background-image: url("../img/bg-pattern-desktop.svg");
+  z-index: -5;
+}
+
+.header__img {
+  position: absolute;
+  right: 0;
+  background-image: url("../img/hero-mobile.jpg");
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -24,5 +57,21 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (min-width: 992px) {
+  .header__bg {
+    position: absolute;
+    left: 0;
+    width: 58%;
+    height: 100vh;
+    background-image: url("../img/bg-pattern-desktop.svg");
+  }
+  .header__img {
+    position: absolute;
+    right: 0;
+    width: 42%;
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
