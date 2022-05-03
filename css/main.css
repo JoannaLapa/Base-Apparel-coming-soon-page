@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: var(--gradient1);
+  background-color: rgba(248, 191, 191, 0.1);
   font-size: 62.5%;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -23,7 +23,7 @@ body {
 .wrapper {
   display: -ms-grid;
   display: grid;
-  padding: 0 1rem;
+  justify-items: center;
   max-width: 1440px;
 }
 
@@ -38,23 +38,22 @@ body {
 }
 
 .header__img {
-  padding: 0;
   width: 100vw;
+  background-size: 100vw;
   height: 15.5rem;
   background-image: url("../img/hero-mobile.jpg");
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
 }
 
 .header__title {
   padding: 4.69rem;
   padding-top: 4.06rem;
-  padding-bottom: 1.88rem;
-  font-size: 2rem;
+  padding-bottom: 0;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   text-align: center;
 }
 
@@ -63,31 +62,45 @@ body {
   color: var(--desaturated-red);
 }
 
-.subscribe-form__box {
-  padding: 0 2.5rem;
+.subscribe__container {
+  padding: 2.2rem;
+  padding-top: 1rem;
 }
 
-.subscribe-form__txt {
-  padding-bottom: 2.5rem;
+.subscribe__txt {
+  padding-bottom: 2.2rem;
   color: var(--desaturated-red);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 300;
 }
 
-.subscribe-form__input {
-  width: 19.38rem;
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.subscribe__form--input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 98%;
   height: 3.13rem;
-  border: 1.5px solid var(--desaturated-red);
+  border: 1.5px solid transparent;
+  border-right: 1.5px solid transparent;
   border-radius: 30px;
   padding-left: 1.3rem;
   color: var(--desaturated-red);
   font-weight: 300;
+  background-color: rgba(248, 191, 191, 0.05);
 }
 
-.subscribe-form__btn {
-  position: absolute;
-  right: 0.58rem;
+.subscribe__form--btn {
   height: 3.13rem;
   width: 4.06rem;
   border-radius: 30px;
@@ -95,9 +108,15 @@ body {
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   -webkit-box-shadow: 0 15px 40px var(--desaturated-red);
           box-shadow: 0 15px 40px var(--desaturated-red);
+  z-index: 100;
 }
 
 .attribution {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-size: 11px;
   text-align: center;
 }
@@ -106,19 +125,38 @@ body {
   color: #3e52a3;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  .wrapper {
+    -ms-grid-columns: 58% 42%;
+        grid-template-columns: 58% 42%;
+  }
+  .logo {
+    width: 58%;
+    height: 4%;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    z-index: 1;
+  }
+  .header__left {
+    padding: 0 8.13rem;
+  }
   .header__bg {
     position: absolute;
     left: 0;
     width: 58%;
     height: 100vh;
     background-image: url("../img/bg-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
   }
   .header__img {
     position: absolute;
     right: 0;
     width: 42%;
     height: 100vh;
+    background-image: url(../img/hero-desktop.jpg);
+    background-position: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
