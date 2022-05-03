@@ -17,6 +17,7 @@
 }
 
 body {
+    background-color: var(--gradient1);
 	font-size: 62.5%;
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -40,19 +41,14 @@ body {
 
 .header {
 	//375/800
-	&__bg {
-		position: absolute;
-		left: 0;
-		width: 58%;
-		height: 100vh;
-		background-image: url('../img/bg-pattern-desktop.svg');
-		z-index: -5;
-	}
-
 	&__img {
-		position: absolute;
-		right: 0;
+		//w375/h250px
+		padding: 0;
+		width: 100vw;
+		height: 15.5rem;
 		background-image: url('../img/hero-mobile.jpg');
+		background-position: center;
+		object-fit: cover;
 	}
 }
 
