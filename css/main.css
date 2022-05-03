@@ -11,6 +11,7 @@
   --dark-grayish-red: hsl(0, 6%, 24%);
   --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --gradient3: linear-gradient(10deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 body {
@@ -60,6 +61,40 @@ body {
 .header__title--pink {
   font-weight: 300;
   color: var(--desaturated-red);
+}
+
+.subscribe-form__box {
+  padding: 0 2.5rem;
+}
+
+.subscribe-form__txt {
+  padding-bottom: 2.5rem;
+  color: var(--desaturated-red);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.subscribe-form__input {
+  width: 19.38rem;
+  height: 3.13rem;
+  border: 1.5px solid var(--desaturated-red);
+  border-radius: 30px;
+  padding-left: 1.3rem;
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+.subscribe-form__btn {
+  position: absolute;
+  right: 0.58rem;
+  height: 3.13rem;
+  width: 4.06rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0 15px 40px var(--desaturated-red);
+          box-shadow: 0 15px 40px var(--desaturated-red);
 }
 
 .attribution {

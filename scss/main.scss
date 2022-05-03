@@ -13,6 +13,7 @@
 	//### Gradients
 	--gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 	--gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	--gradient3: linear-gradient(10deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	//notation example: color: var(--Dark-Grayish-Red);
 }
 
@@ -58,7 +59,7 @@ body {
 		padding-bottom: 1.88rem;
 		font-size: 2rem;
 		text-transform: uppercase;
-        font-weight: 400;
+		font-weight: 400;
 		letter-spacing: 15px;
 		text-align: center;
 
@@ -69,11 +70,38 @@ body {
 	}
 }
 
-// .subscribe-form{
-//     &__box{
-
-//     }
-// }
+.subscribe-form {
+	&__box {
+		padding: 0 2.5rem;
+	}
+	&__txt {
+		padding-bottom: 2.5rem;
+		color: var(--desaturated-red);
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: 300;
+	}
+	&__input {
+		//310w/50h
+		width: 19.38rem;
+		height: 3.13rem;
+		border: 1.5px solid var(--desaturated-red);
+		border-radius: 30px;
+		padding-left: 1.3rem;
+		color: var(--desaturated-red);
+		font-weight: 300;
+	}
+	&__btn {
+		position: absolute;
+		right: 0.58rem;
+		height: 3.13rem;
+		width: 4.06rem;
+		border-radius: 30px;
+        border: 1px solid transparent;
+		background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 0 15px 40px var(--desaturated-red);
+	}
+}
 
 .attribution {
 	font-size: 11px;
