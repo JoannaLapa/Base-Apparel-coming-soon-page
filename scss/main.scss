@@ -1,5 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    font-size: 62.5%;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    padding: 0 1rem;
+    max-width: 1440px;
 }
 
 .attribution {
