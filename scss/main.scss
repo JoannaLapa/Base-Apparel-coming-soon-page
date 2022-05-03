@@ -87,27 +87,34 @@ body {
 		display: flex;
 		flex-direction: row;
 	}
+    &__form--container{
+        height: 3.13rem;
+        border: 1px solid var(--desaturated-red);
+        border-left: 1px solid transparent;
+        border-radius: 30px;
+    }
 	&__form--input {
 		//310w/50h
 		flex-grow: 2;
-		width: 98%;
-		height: 3.13rem;
+		width: 100%;
+	//	height: 3.13rem;
 		border: 1.5px solid transparent;
-		border-right: 1.5px solid transparent;
-		border-radius: 30px;
 		padding-left: 1.3rem;
 		color: var(--desaturated-red);
 		font-weight: 300;
 		background-color: rgba(248, 191, 191, 0.05);
+
+        &:focus{
+            outline: none;
+        }
 	}
 	&__form--btn {
 		height: 3.13rem;
-		width: 4.06rem;
+		width: 5.4rem;
 		border-radius: 30px;
 		border: 1px solid transparent;
 		background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 		box-shadow: 0 15px 40px var(--desaturated-red);
-		z-index: 100;
 	}
 }
 
