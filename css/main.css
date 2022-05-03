@@ -46,6 +46,22 @@ body {
      object-fit: cover;
 }
 
+.header__title {
+  padding: 4.69rem;
+  padding-top: 4.06rem;
+  padding-bottom: 1.88rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 15px;
+  text-align: center;
+}
+
+.header__title--pink {
+  font-weight: 300;
+  color: var(--desaturated-red);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

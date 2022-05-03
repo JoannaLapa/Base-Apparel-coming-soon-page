@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: var(--gradient1);
+	background-color: var(--gradient1);
 	font-size: 62.5%;
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -50,7 +50,30 @@ body {
 		background-position: center;
 		object-fit: cover;
 	}
+
+	&__title {
+		//fz 38px, letter-spacing 15px pading-top 65px, padding left 75px padding right 80 px
+		padding: 4.69rem;
+		padding-top: 4.06rem;
+		padding-bottom: 1.88rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+        font-weight: 400;
+		letter-spacing: 15px;
+		text-align: center;
+
+		&--pink {
+			font-weight: 300;
+			color: var(--desaturated-red);
+		}
+	}
 }
+
+// .subscribe-form{
+//     &__box{
+
+//     }
+// }
 
 .attribution {
 	font-size: 11px;
