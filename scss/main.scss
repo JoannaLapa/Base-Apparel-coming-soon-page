@@ -131,17 +131,20 @@ body {
 			background-color: hsl(0, 80%, 86%);
 		}
 	}
-	&__form--error {
-		display: none;
-		padding-left: 1.3rem;
-		padding-top: 0.5rem;
-		font-size: 0.8rem;
-		color: hsl(0, 74%, 74%);
-	}
-	&__form--erroricon {
+	&__form--error-icon {
 		display: none;
 		padding-right: 1rem;
 	}
+}
+.activate {
+	display: grid;
+}
+
+.msg-styles {
+	padding-left: 1.3rem;
+	padding-top: 0.5rem;
+	font-size: 0.8rem;
+	color: hsl(0, 74%, 74%);
 }
 
 .attribution {
@@ -157,6 +160,9 @@ body {
 	& a {
 		color: hsl(228, 45%, 44%);
 	}
+}
+.border-pink {
+	border: 2px solid hsl(0, 74%, 74%);
 }
 
 @media (min-width: 430px) {
@@ -175,18 +181,18 @@ body {
 	}
 
 	.logo {
-		align-self: center;
 		display: grid;
-		align-items: center;
+		align-items: start;
 		padding: 0 2rem 0;
 		width: 50%;
-		height: 11%;
+		height: 45%;
 		grid-column: 1;
 		grid-row: 1;
 		z-index: 1;
 
 		&__img {
 			padding: 0;
+			height: 2rem;
 		}
 	}
 
@@ -258,7 +264,7 @@ body {
 		padding-left: 0.5rem;
 	}
 }
-@media (min-width: 992px) {
+@media (min-width: 1248px) {
 	.wrapper {
 		display: grid;
 		grid-template-columns: 12% 32% 15% 41%;
@@ -268,7 +274,7 @@ body {
 		grid-column: 2;
 		padding-left: 0;
 		height: 45%;
-		align-self: center;
+		//align-self: center;
 		align-items: start;
 		&__img {
 			height: 2rem;
