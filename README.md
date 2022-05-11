@@ -29,7 +29,7 @@ Users should be able to:
 ![](./Screenshot_mobile.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://joannalapa.github.io/Base-Apparel-coming-soon-page/)
 - Live Site URL: https://joannalapa.github.io/Base-Apparel-coming-soon-page/)
 ## My process
 ### Built with

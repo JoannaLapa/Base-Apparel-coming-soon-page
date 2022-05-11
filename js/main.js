@@ -1,8 +1,8 @@
-const email = document.querySelector('.subscribe__form--input')
-const btn = document.querySelector('.subscribe__form--btn')
-const msg = document.querySelector('.subscribe__form--msg')
-const errorIcon = document.querySelector('.subscribe__form--error-icon')
-const subscribeForm = document.querySelector('.subscribe__form')
+const email = document.querySelector('.form__input')
+const btn = document.querySelector('.form__btn')
+const msg = document.querySelector('.form__msg')
+const errorIcon = document.querySelector('.form__error-icon')
+const subscribeForm = document.querySelector('.form')
 
 const makeIfCorrect = () => {
 	errorIcon.classList.remove('activate')

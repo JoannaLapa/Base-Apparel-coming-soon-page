@@ -55,9 +55,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
-	padding: 2.2rem;
-	padding-top: 4rem;
-	padding-bottom: 0;
+	padding: 4rem 2.2rem 0;
 
 	&__title {
 		font-size: 2.5rem;
@@ -79,16 +77,17 @@ body {
 		font-size: 0.95rem;
 		font-weight: 300;
 	}
+}
 
-	&__form {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		height: 3.13rem;
-		border: 1px solid var(--desaturated-red);
-		border-radius: 30px;
-	}
-	&__form--input {
+.form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 3.13rem;
+	border: 1px solid var(--desaturated-red);
+	border-radius: 30px;
+
+	&__input {
 		flex-grow: 2;
 		padding-left: 1.3rem;
 		width: 100%;
@@ -102,7 +101,7 @@ body {
 			color: black;
 		}
 	}
-	&__form--btn {
+	&__btn {
 		height: 3.15rem;
 		width: 5.5rem;
 		border-radius: 30px;
@@ -116,7 +115,7 @@ body {
 			background-color: hsl(0, 80%, 86%);
 		}
 	}
-	&__form--error-icon {
+	&__error-icon {
 		display: none;
 		padding-right: 1rem;
 	}
@@ -126,8 +125,7 @@ body {
 }
 
 .msg-styles {
-	padding-left: 1.3rem;
-	padding-top: 0.5rem;
+	padding: 0.5rem 0 0 1.3rem;
 	color: hsl(0, 74%, 74%);
 	font-size: 0.8rem;
 }
@@ -226,13 +224,12 @@ body {
 			font-size: 1.1rem;
 			line-height: 2rem;
 		}
+	}
+	.form {
+		grid-row: 3;
+		height: 3.5rem;
 
-		&__form {
-			grid-row: 3;
-			height: 3.5rem;
-		}
-
-		&__form--btn {
+		&__btn {
 			width: 7rem;
 			height: 3.5rem;
 			border-right: 1px solid var(--desaturated-red);
@@ -289,10 +286,13 @@ body {
 			font-weight: 600;
 			letter-spacing: 20px;
 		}
-		&__form--error {
+	}
+	.form {
+		&__error {
 			padding-top: 0;
 		}
 	}
+
 	.attribution {
 		grid-column: 2;
 	}

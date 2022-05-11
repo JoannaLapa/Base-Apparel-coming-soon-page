@@ -72,9 +72,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding: 2.2rem;
-  padding-top: 4rem;
-  padding-bottom: 0;
+  padding: 4rem 2.2rem 0;
 }
 
 .subscribe__title {
@@ -98,7 +96,7 @@ body {
   font-weight: 300;
 }
 
-.subscribe__form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +112,7 @@ body {
   border-radius: 30px;
 }
 
-.subscribe__form--input {
+.form__input {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -126,12 +124,12 @@ body {
   font-weight: 300;
 }
 
-.subscribe__form--input:focus {
+.form__input:focus {
   outline: none;
   color: black;
 }
 
-.subscribe__form--btn {
+.form__btn {
   height: 3.15rem;
   width: 5.5rem;
   border-radius: 30px;
@@ -142,12 +140,12 @@ body {
   cursor: pointer;
 }
 
-.subscribe__form--btn:hover {
+.form__btn:hover {
   background-image: none;
   background-color: #f8bfbf;
 }
 
-.subscribe__form--error-icon {
+.form__error-icon {
   display: none;
   padding-right: 1rem;
 }
@@ -158,8 +156,7 @@ body {
 }
 
 .msg-styles {
-  padding-left: 1.3rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 0 0 1.3rem;
   color: #ee8c8c;
   font-size: 0.8rem;
 }
@@ -275,12 +272,12 @@ body {
     font-size: 1.1rem;
     line-height: 2rem;
   }
-  .subscribe__form {
+  .form {
     -ms-grid-row: 3;
     grid-row: 3;
     height: 3.5rem;
   }
-  .subscribe__form--btn {
+  .form__btn {
     width: 7rem;
     height: 3.5rem;
     border-right: 1px solid var(--desaturated-red);
@@ -350,7 +347,7 @@ body {
     font-weight: 600;
     letter-spacing: 20px;
   }
-  .subscribe__form--error {
+  .form__error {
     padding-top: 0;
   }
   .attribution {
