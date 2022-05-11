@@ -9,9 +9,6 @@
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
-  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  --gradient3: linear-gradient(10deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 body {
@@ -94,8 +91,7 @@ body {
 }
 
 .subscribe__txt {
-  padding-bottom: 2.2rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0 2.2rem;
   color: var(--desaturated-red);
   text-align: center;
   font-size: 0.95rem;
@@ -122,12 +118,12 @@ body {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  padding-left: 1.3rem;
   width: 100%;
   border: 1.5px solid transparent;
-  padding-left: 1.3rem;
+  background-color: rgba(248, 191, 191, 0.05);
   color: var(--desaturated-red);
   font-weight: 300;
-  background-color: rgba(248, 191, 191, 0.05);
 }
 
 .subscribe__form--input:focus {
@@ -137,7 +133,7 @@ body {
 
 .subscribe__form--btn {
   height: 3.15rem;
-  width: 5.4rem;
+  width: 5.5rem;
   border-radius: 30px;
   border: 1px solid transparent;
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
@@ -164,16 +160,16 @@ body {
 .msg-styles {
   padding-left: 1.3rem;
   padding-top: 0.5rem;
-  font-size: 0.8rem;
   color: #ee8c8c;
+  font-size: 0.8rem;
 }
 
 .attribution {
-  padding-top: 1rem;
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column-align: center;
       justify-self: center;
+  padding-top: 1rem;
 }
 
 .attribution__txt {
@@ -208,16 +204,16 @@ body {
   .logo {
     display: -ms-grid;
     display: grid;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    padding: 0 2rem 0;
-    width: 50%;
-    height: 45%;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 0 3rem 0;
+    width: 50%;
+    height: 45%;
     z-index: 1;
   }
   .logo__img {
@@ -247,18 +243,18 @@ body {
   .subscribe {
     display: -ms-grid;
     display: grid;
-    -ms-grid-row-align: center;
-        align-self: center;
     -ms-grid-rows: 4;
         grid-template-rows: 4;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
-    padding: 0 2rem 0;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 3rem 0;
     width: 100%;
     height: 80%;
   }
@@ -274,10 +270,10 @@ body {
   .subscribe__txt {
     -ms-grid-row: 2;
     grid-row: 2;
+    padding: 0;
     text-align: start;
     font-size: 1.1rem;
     line-height: 2rem;
-    padding: 0;
   }
   .subscribe__form {
     -ms-grid-row: 3;
@@ -290,16 +286,15 @@ body {
     border-right: 1px solid var(--desaturated-red);
   }
   .attribution {
-    -ms-grid-column: 2;
-    grid-column: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
-    text-align: center;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
   }
 }
 
@@ -316,11 +311,11 @@ body {
   .logo {
     -ms-grid-column: 2;
     grid-column: 2;
-    padding-left: 0;
-    height: 45%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    padding-left: 0;
+    height: 45%;
   }
   .logo__img {
     height: 2rem;
@@ -336,18 +331,18 @@ body {
     background-image: url(../img/hero-desktop.jpg);
   }
   .subscribe {
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
     -ms-grid-rows: 4;
         grid-template-rows: 4;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
     -ms-grid-column: 2;
     grid-column: 2;
     -ms-grid-row: 2;
     grid-row: 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 0;
   }
   .subscribe__title {
@@ -357,6 +352,10 @@ body {
   }
   .subscribe__form--error {
     padding-top: 0;
+  }
+  .attribution {
+    -ms-grid-column: 2;
+    grid-column: 2;
   }
 }
 /*# sourceMappingURL=main.css.map */
